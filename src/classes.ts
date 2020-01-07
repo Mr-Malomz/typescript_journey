@@ -13,16 +13,17 @@ const instance = new ClassWithConstructor(2, "Demola");
 interface IComplexType {
   id: number;
   name: string;
-print(): string;
-usingTheAnyKeyword(arg1: any): any;
-usingDefaultParameters(optionalArgs1?: number);
-usingRestSyntax(...argArray: number[]);
-usingFunctionCallbacks(callback: (id: number) => string);
+  print(): string;
+  usingTheAnyKeyword(arg1: any): any;
+  usingDefaultParameters(optionalArgs1?: number);
+  usingRestSyntax(...argArray: number[]);
+  usingFunctionCallbacks(callback: (id: number) => string);
 }
 
 class ComplexType implements IComplexType {
   id: number;
   name: string;
+  //constructor overloading
   constructor(idArg: number, nameArg: string);
   constructor(idArg: string, nameArg: string);
   constructor(idArg: any, nameArg: any) {
@@ -50,5 +51,5 @@ class ComplexType implements IComplexType {
 }
 
 //instantiation
-let ct_1 = new ComplexType(1, 'ct_1');
-let ct_2 = new ComplexType('abc', 'ct_2');
+let ct_1 = new ComplexType(1, "ct_1");
+let ct_2 = new ComplexType("abc", "ct_2");
