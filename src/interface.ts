@@ -10,5 +10,6 @@ const details = (params: IDetails): void => {
  return print()
 }
 
-details({id: 45, name:'Ademola'})
+
+details({id: 45, name:'Ademola'});
 
