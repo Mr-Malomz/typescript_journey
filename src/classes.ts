@@ -48,3 +48,7 @@ class ComplexType implements IComplexType {
     callback(this.id);
   }
 }
+
+//instantiation
+let ct_1 = new ComplexType(1, 'ct_1');
+let ct_2 = new ComplexType('abc', 'ct_2');
